@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop - FYTE Sportswear</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      /* الانيميشن */
+      animation: slideInFade 1s ease forwards;
+      opacity: 0; /* يبدأ مخفي */
+      transform: translateX(-50px); /* يبدأ على اليسار */
+    }
+
+    @keyframes slideInFade {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      color: white;
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+      white-space: nowrap; /* يمنع الكلمة من الانكسار في الشاشات الكبيرة */
+    }
+
+    header nav a:hover {
+      color: red;
+    }
+
+    h2.section-title {
+      margin: 40px 30px 20px;
+      font-size: 28px;
+      border-bottom: 2px solid red;
+      padding-bottom: 5px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 0 30px 50px;
+    }
+
+    .product {
+      background-color: #222;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .product p {
+      font-size: 16px;
+      color: #f44336;
+      font-weight: bold;
+    }
+
+    /* تعديل للعرض على الموبايل */
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 15px 10px;
+      }
+
+      header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px; /* تقليل الفراغ بين الروابط */
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      header nav a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 8px 12px;
+        white-space: nowrap; /* يمنع الكلمة من الانكسار */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/WhatsApp Image 2025-05-19 at 22.30.53_7cc8e8af.jpg" alt="FYTE Sportswear Logo" />
+      <h1>FYTE Sportswear</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+    </nav>
+  </header>
+
+  <!-- Shorts Section -->
+  <h2 class="section-title">Shorts</h2>
+  <div class="products-grid">
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-19 at 22.50.25_1e0e4e62.jpg" alt="Running Shorts" />
+      <h3>Running Shorts</h3>
+      <p>200 EGP</p>
+    </div>
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-20 at 00.34.49_898527a7.jpg" alt="Sport Shorts" />
+      <h3>Sport Shorts</h3>
+      <p>220 EGP</p>
+    </div>
+  </div>
+
+  <!-- Soccer T-Shirts Section -->
+  <h2 class="section-title">Soccer T-Shirts</h2>
+  <div class="products-grid">
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-20 at 00.34.49_6bf0af92.jpg" alt="T-Shirt Madrid" />
+      <h3>T-Shirt Madrid</h3>
+      <p>250 EGP</p>
+    </div>
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-20 at 00.34.48_65f67543.jpg" alt="T-Shirt Chelsea" />
+      <h3>T-Shirt Chelsea</h3>
+      <p>250 EGP</p>
+    </div>
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-20 at 00.34.48_41c5244b.jpg" alt="T-Shirt Bayern" />
+      <h3>T-Shirt Bayern</h3>
+      <p>250 EGP</p>
+    </div>
+  </div>
+
+  <!-- Sports T-Shirts Section -->
+  <h2 class="section-title">Sports T-Shirts</h2>
+  <div class="products-grid">
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-19 at 22.50.25_3b1a65a7.jpg" alt="Performance T-Shirt" />
+      <h3>Performance T-Shirt</h3>
+      <p>200 EGP</p>
+    </div>
+    <div class="product">
+      <img src="images/WhatsApp Image 2025-05-20 at 00.34.49_ffa515ab.jpg" alt="Casual T-Shirt" />
+      <h3>Casual T-Shirt</h3>
+      <p>180 EGP</p>
+    </div>
+  </div>
+
+  <!-- Pants Section -->
+  <h2 class="section-title">Pants</h2>
+  <div class="products-grid">
+    <div class="product">
+      <img src="images/pants1.jpg" alt="Sport Pants" />
+      <h3>Sport Pants</h3>
+      <p>300 EGP</p>
+    </div>
+    <div class="product">
+      <img src="images/pants2.jpg" alt="Casual Pants" />
+      <h3>Casual Pants</h3>
+      <p>280 EGP</p>
+    </div>
+  </div>
+</body>
+</html>

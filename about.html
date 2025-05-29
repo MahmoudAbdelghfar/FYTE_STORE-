@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About FYTE</title>
+<!-- رابط مكتبة Font Awesome -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<style>
+  /* ستايلات عامة */
+  body {
+    background-color: #111;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px 80px;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+    filter: drop-shadow(0 0 4px red);
+  }
+  h1 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  nav {
+    background-color: #222;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.6);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  nav ul li a {
+    color: #ff4444;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+  }
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  .social-icons a {
+    color: #ff4444;
+    font-size: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+  }
+  footer {
+    background-color: #222;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 -2px 5px rgba(255, 0, 0, 0.6);
+    margin-top: 40px;
+  }
+  footer .social-icons a {
+    font-size: 24px;
+    color: #ff4444;
+  }
+  footer .social-icons a:hover {
+    color: #ff0000;
+    transform: scale(1.2);
+  }
+
+  /* تحسينات الموبايل */
+  @media (max-width: 600px) {
+    body {
+      padding: 20px 10px 60px;
+    }
+    .logo img {
+      width: 100px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+    nav ul li a {
+      font-size: 14px;
+    }
+    .social-icons {
+      margin-top: 10px;
+      gap: 10px;
+    }
+    footer {
+      flex-direction: column;
+      gap: 10px;
+      padding: 15px 10px;
+    }
+    footer .social-icons a {
+      font-size: 28px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- اللوجو -->
+<div class="logo">
+  <img src="images/WhatsApp Image 2025-05-19 at 22.30.53_7cc8e8af.jpg" alt="FYTE Logo" />
+</div>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Sign Up</a></li>
+  </ul>
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1C9oiW4Dxb/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://chat.whatsapp.com/DtdWQKzh1V6CMzDjAXSR2c" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</nav>
+
+<h1>About FYTE</h1>
+<p>
+  FYTE Sportswear is dedicated to providing the best sportswear for athletes of all levels. Our products are designed to enhance your performance and style.
+</p>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1C9oiW4Dxb/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://chat.whatsapp.com/DtdWQKzh1V6CMzDjAXSR2c" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  </div>
+</footer>
+
+</body>
+</html>
